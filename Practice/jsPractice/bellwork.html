@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var num1= prompt("Pick a number between 1-100.");
+    var num2= prompt("Pick a number between 1-100.");
+    var num3= prompt("...and another");
+    var num4= prompt("just one more.");
+
+    num1 = parseInt(num1);
+    num2 = parseInt(num2);
+    num3 = parseInt(num3);
+    num4 = parseInt(num4);
+
+    function greater(){
+        var line1= Math.max(num1,num2);
+        var line2= Math.max(num3,num4);
+        var line3 = Math.max(num1, num2, num3, num4);
+        return alert("For the first two numbers, "+ num1 + " and "+ num2 +", "+ line1 +" is greater.\n"+
+        "For the second two numbers, "+ num3 + " and "+ num4 +", "+ line2 +" is greater.\n" +
+                "For all four numbers " + line3 + " is greatest.");
+    }
+
+    greater();
+
+</script>
+</body>
+</html>

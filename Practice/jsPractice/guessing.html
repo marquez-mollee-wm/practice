@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    var guess;
+
+    var answer;
+
+    var finished = false;
+
+    var guesses = 0;
+
+    function game() {
+        answer = Math.float(Math.random() * 100) + 1;
+
+        while (!finished) {
+            guess = prompt("Guess a number between 1 and 100 ");
+
+            guess = parseInt(guess);
+
+            guesses += 1;
+
+             finished= check();
+
+        }
+
+    }
+
+
+        function check() {
+
+
+            if (isNaN(guess)) {
+                alert("That is not an acceptable guess, please try again. make sure it is a number between 1 and 100")
+            }
+
+            else {
+
+                switch (guess) {
+
+                    case answer < guess:
+                        alert("The number is less than " + guess + ". Guess again ");
+                        return false;
+                        break;
+
+                    case answer > guess:
+                        alert("The number is more than " + guess + ". Guess again ");
+                        return false;
+                        break;
+
+                    case answer == guess:
+                        alert("That's right! It took you " + guesses + " guesses to get that right");
+                        return true;
+                        break;
+
+                }
+
+            }
+        }
+
+
+</script>
+<body onload="game()">
+
+</body>
+</html>

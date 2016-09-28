@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    function game(){
+        var start = confirm("Do you want to know your future?");
+
+        if(start==true){
+            var choice =prompt("Pick a number 1-5");
+
+            choice= parseInt(choice);
+
+            switch(choice){
+
+                case 1:
+                    alert("You will live in a house, marry your high school crush, and have 4 kids together.");
+                    break;
+
+                case 2:
+                    alert("You will die at a young age but have a fulfilling life.");
+                    break;
+
+                case 3:
+                    alert("You will get everthing you want in life but it will never be enough for you.");
+                    break;
+
+                case 4:
+                    alert("You already know the answers to the questions lingering in your head.");
+                    break;
+
+                case 5:
+                    alert("A new voyage will fill your life with untold memories.");
+
+
+            }
+        }
+
+
+    }
+
+    game();
+</script>
+<body>
+
+</body>
+</html>
