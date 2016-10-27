@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Title</title>
+</head>
+<body>
+<script>
+ var chevy = {
+    make: 'chevy',
+    model: 'Camaro',
+    year: 2017,
+    passengers: 2,
+    convertible: false,
+    mileage: 102
+ };
+
+ var Car = {
+  make:'Tesla',
+  model: 'S',
+  color: 'Black',
+  interior: 'Leather',
+  doors: 2,
+  electric: true,
+  price: 70000
+ };
+// OOP in Javascript Rules
+ var cat = {
+  name: "fluffy"
+ };
+ // Separate the property name and property value with a colon:
+ var planet = {
+  diameter: 49528
+ };
+ // A property name can be any string, but we usually stick with valid variable names:
+ var widget = {
+  cost$: 3.14,
+  "on sale": true
+ };
+ // No two properties in an object can have the same name:
+ var forecast = {
+  highTemp: 82,
+  highTemp: 56
+ };
+ // Separate each property name and value pair with a comma:
+ var gadget = {
+  name: "anvil",
+  isHeavy: true
+ };
+ // Don’t use a comma after the last property value:
+ var superhero = {
+  name: "Batman",
+  alias: "Caped Crusader"
+ };
+
+
+ var fiat = {
+  make:"Fiat",
+  model:"500",
+  year: 1957,
+  color: "Blue",
+  passengers:2,
+  convertible:false,
+  mileage: 89000
+ };
+
+ var miles = fiat.mileage;
+ if(miles < 2000){
+   buyIt();
+ }
+
+
+ fiat.mileage = 12000;
+ fiat.needsWashing = true;
+
+ if (fiat.year < 1965){
+  classic = true;
+ }
+
+ for(var i =0; i < fiat.passengers; ++i){
+   addPersonToCar();
+ }
+
+
+ var dog = {
+  name:"Fido",
+  weight: 20.2,
+  age: 4,
+  Breed: "mixed",
+  activity:"fetch Balls"
+ };
+ var bark;
+ if (dog.weight > 20) {
+  bark = "WOOF WOOF";
+ }
+ else {
+  bark = "woof woof";
+ }
+
+ var speak = dog.name + " says " + bark + " when he wants to " + dog.activity;
+ console.log(speak);
+
+</script>
+</body>
+</html>

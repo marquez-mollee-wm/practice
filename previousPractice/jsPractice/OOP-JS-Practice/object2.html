@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//    var Vehicle = function(){
+//        this.wheels = 4;
+//        this.color ='black';
+//    };
+//
+//    var blackCar= new Vehicle();
+//    console.log(blackCar);
+
+    var Vehicle = function(numberOfWheels, carColor){
+        this.wheels = numberOfWheels;
+        this.color = carColor;
+
+    };
+
+    Vehicle.prototype.honk = function(){
+        return 'honk!';
+    };
+
+    Vehicle.prototype.toString = function(){
+        return 'The vehicle has ' + this.wheels +' wheels and is ' + this.color + '.';
+    };
+
+    var redCar = new Vehicle(4, 'red');
+    console.log(redCar);
+    console.log(redCar.honk());
+
+
+</script>
+
+</body>
+</html>
